@@ -193,10 +193,13 @@ main{
 
 /* ESTILOS MAIN/Preguntas Frecuentes */
 
-
+.preguntasFrecuentes h1{
+    color: turquoise;
+}
 
 .preguntasFrecuentes ul{
     border-top: solid white 1px;
+
 }
 
 .preguntasFrecuentes li{
