@@ -6,179 +6,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--TITULO DE LA PAGINA-->
     <title>MascoLand.com/Preguntas frecuentes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="shortcut icon" href="../Imagenes/favicon.ico" />
     <link rel="stylesheet" href="../CSS/estilo.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    
 </head>
 
-<body>
+<body class="bg-light">
     
-    <header>
-        <!--INICIO DEL HEADER-->
+<header>
+
+<!--INICIO DEL HEADER-->
+
+<!--MENU DE NAVEGACION (Utilice NAVBAR de BootStrap)-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../Imagenes/IMG_9471.png" alt="logo" class="animate__animated animate__zoomIn"></a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">MascoLand Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Paginas adicionales/perros.html">Perros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Paginas adicionales/gatos.html">Gatos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Paginas adicionales/marcas.html">Marcas</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscá tu marca preferida" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
         
-                <!--INICIO DE BARRA DE NAVEGACION-->
+      </nav>
+      
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="nav-link disabled animate__animated animate__bounceInDown">Somos MascoLand Store, en nuestra web encontrarás todos los alimentos para tu mascota al mejor precio</a>
+          <a class="enviosHeader nav-link navbar-brand" href="../Paginas adicionales/envios.html"><img src="../Imagenes/envios.png" alt="envio" width="30px"> Envíos sin cargo </a>
+        </div>
+      </nav>
 
-        <nav class="navHeader">
-            <div class="logo">
-                <ul>
-                    <li><a  href="../index.html"><img src="../Imagenes/IMG_9471.png" alt="logo" class="animate__animated animate__zoomIn"></a></li>        <!--Haciendo click en el logo volves al inicio-->
-                    <li><a  href="../index.html">Mascoland Store</a></li>
-                </ul>
-            </div> 
-            
-            <div class="somosMascoland">
-                <p class="animate__animated animate__bounceInDown">Somos MascoLand Store, en nuestra web encontrarás todos los alimentos para tu mascota al mejor precio</p>
-            </div>
+<!--FIN BARRA DE NAVEGACION-->
 
-            <!--ACA VA EL SEARCHBOX-->
-            <div class="searchbox">
-                <input type="text" placeholder="Encontrá tu alimento">
-                <button type="button">Buscar</button>
-            </div> 
-            
-            <div>
-                <ul class="menuHeader">
-                    <li><a  href="../index.html">Inicio</a></li>
-                    <li><a  href="../Paginas adicionales/perros.html">Perros</a></li>
-                    <li><a  href="../Paginas adicionales/gatos.html">Gatos</a></li>
-                    <li><a  href="../Paginas adicionales/marcas.html">Marcas</a></li>
-                </ul>
-            </div>
-            <div class="enviosHeader">
-                <p><a  href="../Paginas adicionales/envios.html"><img src="../Imagenes/envios.png" alt="envio" width="30px"> Envíos sin cargo </a></p>
-            </div>
+<!--BOTON FLOTANTE DE WHATSAPP-->
+<p id="whatsapp">CONTACTO <img src="../Imagenes/WP BW.png" alt="whatsapp" width="40px"></p>
 
-                <!--FIN BARRA NAVEGACION-->    
-        </nav>
-
-        <p id="whatsapp">CONTACTO <img src="../Imagenes/WP BW.png" alt="whatsapp" width="50px"></p>
-        
-        <!--FIN HEADER-->
-    </header>
+<!--FIN DEL HEADER-->
 
 
-<main>
-<!--INICIO DE MAIN-->
-<section>
-<article>
+</header>
 
-<div class="preguntasFrecuentes">
+<!--PREGUNTAS FRECUENTES (Utilizando Collapse de BootStrap JS)-->
+
+<div class="preguntasFrecuentes container">
 
     <h1>Preguntas Frecuentes</h1>
     <br>
+    
+    <p><a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Qué es Mascoland Store?</a></p>
+        <div class="column">
+        <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body">MascoLand Store es una tienda especializada en la comercialización de alimentos para perros y gatos.</div>
+        </div>
+        </div>
+        </div>
+        
+    <p><a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Qué marcas trabajan?</a></p>
+        <div class="column">
+        <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body"><li>En el enlace que se encuentra debajo podés encontrar el listado actualizado con las marcas que trabajamos.</li>
+                                    <li><a  href="../Paginas adicionales/marcas.html">Marcas</a></li>
+        </div>
+        </div>
+        </div>
+        </div>
 
-    <ul>Qué es Mascoland Store?
-        <li>MascoLand Store es una tienda especializada en la comercialización de alimentos para perros y gatos.</li>
-    </ul>
-    <br>
+    <p><a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">Qué pasa si no encuentro la marca que busco?</a></p>
+        <div class="column">
+        <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample3">
+        <div class="card card-body">Si no encontrás la marca que buscás, consultános por privado y la intentaremos conseguir para vos!</div>
+        </div>
+        </div>
+        </div>
 
-    <ul>Qué marcas trabajan?
-        <li>En este <a  href="../Paginas adicionales/marcas.html">enlace</a> podés encontrar el listado actualizado con las marcas que trabajamos.</li>
-    </ul>
-    <br>
+    <p><a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">Cómo puedo realizar el pago?</a></p>
+        <div class="column">
+        <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample4">
+        <div class="card card-body"><li>Efectivo al momento de la entrega</li>
+                                    <li>Transferencia bancaria</li>
+                                    <li>Mercado Pago: Tarjeta de débito / crédito</li></div>
+        </div>
+        </div>
+        </div>
+    
+    <p><a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="multiCollapseExample5">Hacen envíos a domicilio?</a></p>
+        <div class="column">
+        <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample5">
+        <div class="card card-body">Si, hacemos envíos dentro de CABA y GBA.</div>
+        </div>
+        </div>
+        </div>
 
-    <ul>Qué pasa si no encuentro la marca que busco?
-        <li>Si no encontrás la marca que buscás, consultanos por privado y la conseguimos para vos!</li>
-    </ul>
-    <br>
+    <p><a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample6" role="button" aria-expanded="false" aria-controls="multiCollapseExample6">Cuánto sale el envío?</a></p>
+        <div class="column">
+        <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample6">
+        <div class="card card-body"> <li>Si tu domicilio se encuentra dentro de las áreas de cobertura, el envío es sin cargo!</li>
+                                     <li>Si tu domicilio no se encuentra dentro de las áreas de cobertura, decinos donde estás y te cotizamos el envío antes de realizar la compra.</li></div>
+        </div>
+        </div>
+        </div>
 
-    <ul>Cómo puedo realizar el pago?
-        <li>Efectivo al momento de la entrega</li>
-        <li>Transferencia bancaria</li>
-        <li>Mercado Pago: Tarjeta de débito / crédito</li>
-    </ul>
-    <br>
-
-    <ul>Hacen envíos a domicilio?
-        <li>Si, hacemos envíos dentro de CABA y GBA.</li>
-    </ul>
-    <br>
-
-    <ul>Cuánto sale el envío?
-        <li>Si tu domicilio se encuentra dentro de las áreas de cobertura, el envío es sin cargo!</li>
-        <li>Si tu domicilio no se encuentra dentro de las áreas de cobertura, decinos donde estás y te cotizamos el envío antes de realizar la compra.</li>
-    </ul>
-    <br>
-
-    <ul>Cuáles son las áreas de cobertura para envío gratis?
-        <li>En este <a  href="../Paginas adicionales/envios.html">enlace</a> podés encontrar el mapa actualizado con las zonas de cobertura para envíos sin cargo.</li>
-    </ul>
-    <br>
-
-    <ul>Puedo elegir fecha y hora de envío?
-        <li>Si, una vez que realizás la compra podés coordinar con nosotros fecha y rango de entrega.</li>
-    </ul>
-    <br>
+    <p><a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample7" role="button" aria-expanded="false" aria-controls="multiCollapseExample7">Cuáles son las áreas de cobertura para envío gratis?</a></p>
+        <div class="column">
+        <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample7">
+        <div class="card card-body"><li>En el enlace que se encuentra debajo podés encontrar el mapa actualizado con las zonas de cobertura para envíos sin cargo.</li>
+                                    <li><a  href="../Paginas adicionales/envios.html">Zonas de cobertura</a></li>
+        </div>
+        </div>
+        </div>
+        </div>
+    
+    <p><a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample8" role="button" aria-expanded="false" aria-controls="multiCollapseExample8">Puedo elegir fecha y hora de envío?</a></p>
+        <div class="column">
+        <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample8">
+        <div class="card card-body">Si, una vez que realizás la compra podés coordinar con nosotros fecha y rango de entrega.</div>
+        </div>
+        </div>
+        </div>
 
 </div>
 
+<!--FIN PREGUNTAS FRECUENTES (Utilizando Collapse de BootStrap JS)-->
 
-
-
-<br>
-
-</article>
-</section>
-<!--FIN DE MAIN-->
-</main>
 
 <footer>
-        <!--INICIO DE PIE DE PAGINA-->
 
-    <div class="menuesFooter">  
-        
-        <div class="nosotrosFooter">
-            <ul><strong>NOSOTROS</strong>
-                <li><a  href="../Paginas adicionales/preguntas frecuentes.html">Preguntas frecuentes</a></li>
-                <li><a  href="../Paginas adicionales/nosotros.html">Contacto</a></li>
-            </ul>
+<!--INICIO DEL FOOTER-->
+
+
+    <div class="menuFooter bg-light row text-center">
+        <div class="col-lg-3 col-md-6 col-12">
+          <ul><strong>NOSOTROS</strong>
+            <li>
+                <a href="../Paginas adicionales/preguntas frecuentes.html">Preguntas frecuentes</a>
+            </li>
+            <li>
+                <a href="../Paginas adicionales/nosotros.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="productosFooter">
-            <ul><strong>PRODUCTOS</strong>
-                <li><a  href="../Paginas adicionales/marcas.html">Marcas</a></li>
-            </ul>
+        <div class="col-lg-3 col-md-6 col-12">
+          <ul><strong>PRODUCTOS</strong>
+            <li><a  href="../Paginas adicionales/marcas.html">Marcas</a></li>
+        </ul>
         </div>
-
-        <div class="pagoyenvioFooter">
-            <ul><strong>PAGO Y ENVIOS</strong>
-                <li>Compra segura</li>
-                <li><a  href="../Paginas adicionales/envios.html">Áreas de cobertura</a></li>
-            </ul>
+        <div class="col-lg-3 col-md-6 col-12">
+          <ul><strong>PAGO Y ENVÍOS</strong>
+            <li>Compra segura</li>
+            <li><a  href="../Paginas adicionales/envios.html">Áreas de cobertura</a></li>
+          </ul>
         </div>
-
-        <div class="legalesFooter">
-            <ul><strong>LEGALES</strong>
-                <li><a  href="../Paginas adicionales/legales.html">Términos y condiciones</a></li>
-                <li><a  href="../Paginas adicionales/legales.html">Política de privacidad</a></li>
-            </ul>
+        <div class="col-lg-3 col-md-6 col-12">
+          <ul><strong>LEGALES</strong>
+            <li><a  href="../Paginas adicionales/legales.html">Términos y condiciones</a></li>
+            <li><a  href="../Paginas adicionales/legales.html">Política de privacidad</a></li>
+        </ul>
         </div>
+      </div>
+    
 
-    </div>
+    <div class="redesyderechos bg-light">
 
-<br>
-
-<div class="redesyderechos">
-    <div>
-    <ul class="seguinos"><strong>Seguinos en redes</strong>
         <div>
-        <span><a  href="https://www.facebook.com/Mascoland-Store-113184507272640/"><img src="../Imagenes/FB BW.png" alt="facebook" width="30px"></a></span>
-        <span><a  href="https://www.instagram.com/mascolandstore/?igshid=1nhmh21jckhgu"><img src="../Imagenes/IG BW.png" alt="instagram" width="30px"></a></span>
+        <ul class="seguinos"><strong>Seguinos en redes</strong>
+            <div>
+            <span><a  href="https://www.facebook.com/Mascoland-Store-113184507272640/"><img src="../Imagenes/FB BW.png" alt="facebook" width="30px"></a></span>
+            <span><a  href="https://www.instagram.com/mascolandstore/?igshid=1nhmh21jckhgu"><img src="../Imagenes/IG BW.png" alt="instagram" width="30px"></a></span>
+            </div>
+        </ul>
         </div>
-    </ul>
+    
+        <div class="derechos">
+        <p>2021 MascoLand Store todos los derechos reservados</p>
+        </div>
     </div>
 
-    <div class="derechos">
-    <p>2021 MascoLand Store todos los derechos reservados</p>
-    </div>
-</div>
-
-<!--FIN PIE DE PAGINA-->
 </footer>
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
