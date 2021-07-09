@@ -8,7 +8,7 @@
     <title>MascoLand.com/Nosotros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="shortcut icon" href="../Imagenes/favicon.ico" />
-    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/estilosass.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -64,51 +64,102 @@
 <!--FIN BARRA DE NAVEGACION-->
 
 <!--BOTON FLOTANTE DE WHATSAPP-->
-<p id="whatsapp">CONTACTO <img src="../Imagenes/WP BW.png" alt="whatsapp" width="40px"></p>
+<p>CONTACTO <img src="../Imagenes/WP BW.png" alt="whatsapp" width="40px"></p>
 
 <!--FIN DEL HEADER-->
 
 
 </header>
 
+<main>
 
-    <!--INICIO DE FORM-->
+  <div class="mainHomeTitulo col-lg-12 col-md-12 col-12"><h1>Nuestra responsabilidad, cuidar la alimentación de tu mascota</h1></div>
+<br>
+
+<div class="container-fluid">
+  <div class="row">
+
     
+    <div class="col-lg-6 col-md-6"><img src="../Imagenes/nosotros2.jpg" alt=nosotros2 width="100%"></div>
+    <div class="nosotros col-lg-6 col-md-6 col-12">
+      <p>Las mascotas dependen de los humanos para satisfacer sus necesidades alimenticias. Una dieta debe ser equilibrada y adecuada para cada etapa de la vida del animal, así como también a su raza, tamaño y características. Una dieta balanceada está compuesta de agua, hidratos de carbono, proteínas, vitaminas, minerales y lípidos.
+      <br>El método de procesamiento y la calidad de los ingredientes son los principales aspectos que definirán la calidad de un alimento.</p></div>
+
+    <div class="nosotrosConTitulo col-lg-6 col-md-6 col-12">
+    <h1>Cómo elegir el alimento adecuado?</h1>
+    <p>La nutrición de nuestras mascotas tiene aspectos importantes a considerar antes de elegir un alimento. </p>
+
+    <h1>Qué clases de alimentos existen?</h1>
+    <p>Existen distintos tipos de alimentos: secos, semi húmedos y enlatados.</p>
+
+    <h1>Cómo saber si un alimento es bueno?</h1>
+    <p>Dentro de cada categoría, existen los alimentos Super Premium, Premium y Económicos. Cada uno está hecho con distintos ingredientes y cuanto mas premium significa mayor cantidad de ingredientes naturales.</p>
+    
+    </div>
+    <div class="col-lg-6 col-md-6"><img src="../Imagenes/nosotros3.jpg" alt=nosotros3 width="100%"></div>
+
+  </div>
+</div>
+
+<br>
+
+<br>
+
+<!--INICIO DE FORM-->
+
+    <form class="form container d-flex justify-content-center" action="" method="">
+    <p>
+      <fieldset><a class="btn btn-secondary btn-sm" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <legend>Ayudanos a mejorar</legend></a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body bg-light">
+        <label for="experiencia">Como calificarías tu experiencia?
+          <div class="dropdown">
+            <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Elige una opción
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Buena</a></li>
+              <li><a class="dropdown-item" href="#">Regular</a></li>
+              <li><a class="dropdown-item" href="#">Mala</a></li>
+            </ul>
+          </div>
+        </label> 
+
     <br>
-    
-        <form class="form container" action="" method="">
-            <fieldset>
-                <legend><strong>Ayudanos a mejorar</strong></legend>
-                <label for="experiencia">Como calificarías tu experiencia? <select name="" id=""></label>
-                    <option value="">Elige una opcion</option>
-                    <option value="">Buena</option>
-                    <option value="">Normal</option>
-                    <option value="">Mala</option>
-                </select>
-                <br>
-                <label for="mensaje">Dejanos un mensaje</label>
-                <br>
-            <textarea name="" id="" cols="45" rows="5"></textarea>
-            <br>
-            <label for="terminos">Aceptar Términos<input type="checkbox"></label>
-            <br>
-            <input type="submit" value="Enviar">
-            <br>
-            <input type="reset" value="Reiniciar el Formulario">
-            </fieldset>
-        </form>
-           
-        <br>
+      <label for="mensaje">Dejanos un mensaje</label>
+    <br>
+      <textarea name="" id="" cols="45" rows="5"></textarea>
+    <br>
+      <label for="terminos">Aceptar Términos <input type="checkbox"></label>
+    <br>
+      <div>
+        <input class="btn btn-outline-dark" type="submit" value="Enviar">
+        <input class="btn btn-outline-dark" type="reset" value="Reiniciar el formulario">
+      </div>
+  </div>
+  </div>
+</fieldset>
+
+  </form>
+  
+<!--FIN DE FORM-->
+
+<br>
         
-        <!--FIN DE FORM-->
+
+
+</main>
 
 <footer>
 
 <!--INICIO DEL FOOTER-->
 
-
-    <div class="menuFooter bg-light row text-center">
-        <div class="col-lg-3 col-md-6 col-12">
+<section>
+  
+    <div class="bg-light row text-center">
+        <div class="col-lg-4 col-md-6 col-12">
           <ul><strong>NOSOTROS</strong>
             <li>
                 <a href="../Paginas adicionales/preguntas frecuentes.html">Preguntas frecuentes</a>
@@ -118,26 +169,22 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-4 col-md-6 col-12">
           <ul><strong>PRODUCTOS</strong>
             <li><a  href="../Paginas adicionales/marcas.html">Marcas</a></li>
         </ul>
         </div>
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-4 col-md-12 col-12">
           <ul><strong>PAGO Y ENVÍOS</strong>
             <li>Compra segura</li>
             <li><a  href="../Paginas adicionales/envios.html">Áreas de cobertura</a></li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6 col-12">
-          <ul><strong>LEGALES</strong>
-            <li><a  href="../Paginas adicionales/legales.html">Términos y condiciones</a></li>
-            <li><a  href="../Paginas adicionales/legales.html">Política de privacidad</a></li>
-        </ul>
-        </div>
-      </div>
-    
 
+      </div>
+    </section>   
+
+    <article>
     <div class="redesyderechos bg-light">
 
         <div>
@@ -153,6 +200,7 @@
         <p>2021 MascoLand Store todos los derechos reservados</p>
         </div>
     </div>
+</article>
 
 </footer>
 
